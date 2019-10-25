@@ -5,6 +5,7 @@ A JavaScript parser/splitter for [`lodash.template`](https://lodash.com/docs/#te
 ## Features
 
 - It separate JavaScript Code and Template String from `lodash.template` content
+    - Preserve same position of JavaScript code as possible
 
 > Lodash template -> JavaScript Code and Template Content.
 
