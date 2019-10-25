@@ -9,7 +9,8 @@ A JavaScript parser/splitter for [`lodash.template`](https://lodash.com/docs/#te
 > Lodash template -> JavaScript Code and Template Content.
 
 It help to implement lint tools for JavaScript code in lodash template.
-`lodash-template-js-parser` just includes a parser for lodash template. 
+
+`lodash-template-js-parser` just includes a parser for lodash template, So `lodash-template-js-parser` does not includes JavaScript Parser like espree, babel/parser.
 
 This idea and implementation is based on [ota-meshi/eslint-plugin-lodash-template](https://github.com/ota-meshi/eslint-plugin-lodash-template).
 
