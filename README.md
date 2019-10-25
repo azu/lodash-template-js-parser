@@ -1,4 +1,4 @@
-# lodash-template-js-parser
+# lodash-template-js-parser [![Build Status](https://travis-ci.org/azu/lodash-template-js-parser.svg?branch=master)](https://travis-ci.org/azu/lodash-template-js-parser)
 
 A JavaScript parser/splitter for [`lodash.template`](https://lodash.com/docs/#template)
 
