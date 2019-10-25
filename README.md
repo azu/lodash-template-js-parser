@@ -69,7 +69,7 @@ assert.strictEqual(script, `
 `);
 assert.strictEqual(template, `
 const age = 18;
-                    
+                     
     <li>            (age:           )</li>
               
     <li>over the age limit!</li>
