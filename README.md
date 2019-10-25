@@ -11,9 +11,14 @@ A JavaScript parser/splitter for [`lodash.template`](https://lodash.com/docs/#te
 
 It help to implement lint tools for JavaScript code in lodash template.
 
-`lodash-template-js-parser` just includes a parser for lodash template, So `lodash-template-js-parser` does not includes JavaScript Parser like espree, babel/parser.
-
 This idea and implementation is based on [ota-meshi/eslint-plugin-lodash-template](https://github.com/ota-meshi/eslint-plugin-lodash-template).
+
+## Motivation
+
+[ota-meshi/eslint-plugin-lodash-template](https://github.com/ota-meshi/eslint-plugin-lodash-template) focus on linting by ESLint, so It includes many features.
+
+I want to get simple parser/splitter for lodash template.
+`lodash-template-js-parser` just includes a parser for lodash template, So `lodash-template-js-parser` does not includes JavaScript Parser like espree, babel/parser.
 
 ## Install
 
