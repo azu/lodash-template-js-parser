@@ -48,7 +48,7 @@ Example:
 import { parseTemplate } from "lodash-template-js-parser";
 const content = `
 const age = 18;
-<% if (age < 3) { %>
+<% if (age < 18) { %>
     <li><%= name %> (age: <%= age %>)</li>
 <% } else { %>
     <li>over the age limit!</li>
@@ -61,7 +61,7 @@ const { script, template } = parseTemplate(content, {
 });
 assert.strictEqual(script, `
                
-   if (age < 3) {   
+   if (age < 18) {   
             name ;            age ;   
    } else {   
                                 

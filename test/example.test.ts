@@ -6,7 +6,7 @@ describe("example", function() {
 
         const content = `
 const age = 18;
-<% if (age < 3) { %>
+<% if (age < 18) { %>
     <li><%- name %> (age: <%- age %>)</li>
 <% } else { %>
     <li>over the age limit!</li>
@@ -19,7 +19,7 @@ const age = 18;
         });
         assert.strictEqual(script, `
                
-   if (age < 3) {   
+   if (age < 18) {   
             name ;            age ;       
    } else {   
                                 
