@@ -1,6 +1,6 @@
 # lodash-template-js-parser
 
-A JavaScript parser for [`lodash.template`](https://lodash.com/docs/#template)
+A JavaScript parser/splitter for [`lodash.template`](https://lodash.com/docs/#template)
 
 ## Features
 
