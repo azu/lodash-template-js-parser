@@ -1,0 +1,22 @@
+var data = {
+  title: "",
+  description: ""
+};
+
+var template = [
+  "<h2><%- title %></h2>",
+  "<p><%- description %>",
+  '<ul class="cf">',
+  "<% _.each(list, function(val, i) { %>",
+    "<li>",
+      "No.<%- i + 1 %><br />",
+      "name:  <%- val.name %><br />",
+      "score: <%- val.score %><br />",
+    "</li>",
+  "<% }) %>",
+  "</ul>"
+].join("");
+
+$("#result").append(_.template(template, data));
+
+widget.show();

@@ -1,0 +1,4 @@
+{
+    "scripts_": "  \nconst a = \"0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ\";\nconst b = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz\";\nconst c = \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\";\n\nconst pos = Math.floor((new Date()).getTime() / 1000000) % 62;\n\nconst str = a.charAt(pos) + b.charAt(pos) + c.charAt(pos);\n  \n\n                 \n                       \n\n",
+    "template": "  \n                                                                           \n                                                                           \n                                                                           \n\n                                                              \n\n                                                          \n  \n\nvar str = \"test\";\nconsole.log(\"{{str}}\");\n\n"
+}

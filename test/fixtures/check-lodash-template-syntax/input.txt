@@ -1,0 +1,3 @@
+Evaluate: <%eval("code")%>!
+Interpolate: <%=eval("code")%>!
+Escape: <%-eval("code")%>!

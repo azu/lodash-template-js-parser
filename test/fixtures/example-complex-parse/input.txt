@@ -1,0 +1,4 @@
+_.templateSettings = {
+    evaluate    : /<%([\s\S]+?)%>/g,
+    interpolate: /\{\{(.+?)\}\}/g
+  };

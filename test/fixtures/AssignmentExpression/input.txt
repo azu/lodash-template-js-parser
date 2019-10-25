@@ -1,0 +1,4 @@
+Property assignment can replace trusted function with eval function.
+We need to avoid this
+
+<% window.trustme=1 %>

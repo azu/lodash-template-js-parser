@@ -1,0 +1,4 @@
+{
+    "scripts_": "                                \n",
+    "template": "#{'' if show_footer else 'none'}\n"
+}

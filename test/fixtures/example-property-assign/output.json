@@ -1,0 +1,4 @@
+{
+    "scripts_": "       myVar.mediaCD = \"23\";  \n\n             myVar.mediaCD;   \n\n                              \n",
+    "template": "    '                       ';\n\n    //ert('                ');\n\n    {{myVar.mediaCD = \"fx23\"}}\n"
+}

@@ -1,0 +1,4 @@
+{
+    "scripts_": "            eval(\"code\")   \n                eval(\"code\");  \n           eval(\"code\");  \n",
+    "template": "Evaluate:                 !\nInterpolate:                  !\nEscape:                  !\n"
+}

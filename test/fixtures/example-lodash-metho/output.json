@@ -1,0 +1,4 @@
+{
+    "scripts_": "            \n            \n                 \n  \n\n                \n           title ;        \n          description ;   \n                    \n      _.each(list, function(val, i) {     \n           \n              i + 1 ;         \n                  val.name ;         \n                  val.score ;         \n            \n      })     \n         \n           \n\n                                                \n\n              \n",
+    "template": "var data = {\n  title: \"\",\n  description: \"\"\n};\n\nvar template = [\n  \"<h2>            </h2>\",\n  \"<p>                  \",\n  '<ul class=\"cf\">',\n  \"                                     \",\n    \"<li>\",\n      \"No.            <br />\",\n      \"name:                 <br />\",\n      \"score:                 <br />\",\n    \"</li>\",\n  \"        \",\n  \"</ul>\"\n].join(\"\");\n\n$(\"#result\").append(_.template(template, data));\n\nwidget.show();\n"
+}

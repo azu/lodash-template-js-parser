@@ -1,0 +1,10 @@
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#{mail_footer_background}" align="center" style="padding: 25px; display: #{'' if show_footer else 'none'} !important;" class="footer-padding">
+            ads
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+{
+    "scripts_": "                      \n                     ([\\s\\S]+?)     \n                                 \n    \n",
+    "template": "_.templateSettings = {\n    evaluate    : /              /g,\n    interpolate: /\\{\\{(.+?)\\}\\}/g\n  };\n"
+}

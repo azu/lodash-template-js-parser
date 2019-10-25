@@ -1,0 +1,8 @@
+<% if(x){ %>
+    CONTENT
+<% } else { %>
+    ELSE
+<% } %>
+
+
+<% if(true){}else{ }%>

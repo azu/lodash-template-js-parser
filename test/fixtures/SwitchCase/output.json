@@ -1,0 +1,4 @@
+{
+    "scripts_": "   switch(true){ case 1:{} default:{} }   \n",
+    "template": "                                          \n"
+}

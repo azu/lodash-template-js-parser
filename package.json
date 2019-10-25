@@ -1,0 +1,75 @@
+{
+  "name": "lodash-template-js-parser",
+  "version": "1.0.0",
+  "description": "A JavaScript parser for lodash.template",
+  "keywords": [
+    "JavaScript",
+    "ast",
+    "lodash",
+    "parser",
+    "template"
+  ],
+  "homepage": "https://github.com/azu/lodash-template-js-parser",
+  "bugs": {
+    "url": "https://github.com/azu/lodash-template-js-parser/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/lodash-template-js-parser.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production tsc -p .",
+    "clean": "rimraf lib/",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+    "prepublish": "npm run --if-present build",
+    "test": "mocha \"test/**/*.ts\"",
+    "updateSnapshot": "UPDATE_SNAPSHOT=1 mocha \"test/**/*.ts\"",
+    "watch": "tsc -p . --watch"
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": false,
+    "tabWidth": 4
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.11.7",
+    "cross-env": "^6.0.3",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.2",
+    "mocha": "^6.2.2",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.4.1",
+    "ts-node-test-register": "^8.0.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@types/estree": "^0.0.39",
+    "espree": "^6.1.2"
+  }
+}

@@ -1,0 +1,4 @@
+{
+    "scripts_": "   class X extends Eval{ m(){ super.m() } }   \n",
+    "template": "                                              \n"
+}

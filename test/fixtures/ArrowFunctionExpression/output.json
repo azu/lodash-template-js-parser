@@ -1,0 +1,4 @@
+{
+    "scripts_": "   var fn = (a) => { /* */ }   \n",
+    "template": "                               \n"
+}

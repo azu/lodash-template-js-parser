@@ -1,0 +1,5 @@
+    '#{myVar.mediaCD = "23"}';
+
+    //ert('#{myVar.mediaCD}');
+
+    {{myVar.mediaCD = "fx23"}}
