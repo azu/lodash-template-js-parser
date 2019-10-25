@@ -61,7 +61,7 @@ const { script, template } = parseTemplate(content, {
 assert.strictEqual(script, `
                
    if (age < 3) {   
-          = name            = age         
+            name ;            age ;   
    } else {   
                                 
    }  

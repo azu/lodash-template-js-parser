@@ -3,30 +3,29 @@ import * as assert from "assert";
 
 describe("example", function() {
     it("should return { script, template }", () => {
-    });
-});
-const content = `
+
+        const content = `
 const age = 18;
 <% if (age < 3) { %>
-    <li><%= name %> (age: <%= age %>)</li>
+    <li><%- name %> (age: <%- age %>)</li>
 <% } else { %>
     <li>over the age limit!</li>
 <% }%>
 `;
-const { script, template } = parseTemplate(content, {
-    templateSettings: {
-        interpolate: ["#{", "}"]
-    }
-});
-assert.strictEqual(script, `
+        const { script, template } = parseTemplate(content, {
+            templateSettings: {
+                interpolate: ["#{", "}"]
+            }
+        });
+        assert.strictEqual(script, `
                
    if (age < 3) {   
-          = name            = age         
+            name ;            age ;       
    } else {   
                                 
    }  
 `);
-assert.strictEqual(template, `
+        assert.strictEqual(template, `
 const age = 18;
                     
     <li>            (age:           )</li>
@@ -34,3 +33,6 @@ const age = 18;
     <li>over the age limit!</li>
       
 `);
+
+    });
+});
