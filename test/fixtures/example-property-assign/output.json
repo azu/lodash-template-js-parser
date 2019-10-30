@@ -1,4 +1,4 @@
 {
-    "scripts_": "       myVar.mediaCD = \"23\";  \n\n             myVar.mediaCD;   \n\n                              \n",
-    "template": "    '                       ';\n\n    //ert('                ');\n\n    {{myVar.mediaCD = \"fx23\"}}\n"
+    "scripts_": "       object.prop = \"23\";  \n\n               object.props=1;   \n\n                            \n",
+    "template": "    '                     ';\n\n    //alert('                 ');\n\n    {{object.prop = \"fx23\"}}\n"
 }

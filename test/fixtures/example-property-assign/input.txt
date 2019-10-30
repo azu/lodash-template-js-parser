@@ -1,5 +1,5 @@
-    '#{myVar.mediaCD = "23"}';
+    '#{object.prop = "23"}';
 
-    //ert('#{myVar.mediaCD}');
+    //alert('#{object.props=1}');
 
-    {{myVar.mediaCD = "fx23"}}
+    {{object.prop = "fx23"}}
