@@ -87,7 +87,7 @@ function settingToRegExpInfo(val: string[] | undefined | RegExp, defaultDelimite
  * @param {SourceCodeStore} sourceCodeStore The sourceCodeStore.
  * @returns {object} The parsing result.
  */
-function* genMicroTemplateTokens(code: string, options: parseTemplateOptions, sourceCodeStore: SourceCodeStore): Generator<MicroTemplateEvaluate | MicroTemplateInterpolate | MicroTemplateEvaluate> {
+function* genMicroTemplateTokens(code: string, options: parseTemplateOptions, sourceCodeStore: SourceCodeStore): Generator<(MicroTemplateEvaluate | MicroTemplateInterpolate | MicroTemplateEscape)> {
     const templateSettings = options.templateSettings || {};
     const evaluateInfo = settingToRegExpInfo(templateSettings.evaluate, ["<%", "%>"]);
     const interpolateInfo = settingToRegExpInfo(templateSettings.interpolate, ["<%=", "%>"]);
@@ -161,7 +161,7 @@ export function parseTemplate(code: string, parserOptions: parseTemplateOptions)
     let script = "";
     let pre = 0;
     let template = "";
-    const microTemplateTokens: (MicroTemplateEvaluate | MicroTemplateInterpolate | MicroTemplateEvaluate)[] = []; // TemplateTokens
+    const microTemplateTokens: (MicroTemplateEvaluate | MicroTemplateInterpolate | MicroTemplateEscape)[] = []; // TemplateTokens
     for (const token of genMicroTemplateTokens(code, parserOptions, sourceCodeStore)) {
         microTemplateTokens.push(token);
         const start = token.start;
